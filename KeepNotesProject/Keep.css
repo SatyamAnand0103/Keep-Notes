@@ -1,0 +1,379 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+body {
+  /* background-image: url("images/bookself.jpg"); 
+  background-repeat: no-repeat;
+  background-size: cover; */
+  /* background: linear-gradient(to bottom right, #807be4, #54717f); */
+  background: linear-gradient(to bottom right, #807be4, #54717f);
+
+  /* background-color: #807be4; */
+  /* background-image: url("images/bookself.jpg"); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+.topBox {
+  position: fixed;
+  height: 85px;
+  width: 100%;
+  /* background: linear-gradient(#00006b, #807be4); Header gradient */
+  background-image: linear-gradient(50deg, #2857a4 0%, #403066 74%);
+  /* background-color: #00006b; */
+  /* background-image: linear-gradient(to right, #385389, #3b3b4f); */
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  z-index: 1;
+}
+#left_name {
+  position: relative;
+  top: -12px;
+  font-family: "Calligraffitti", cursive;
+  font-size: 24px;
+}
+#notesimg {
+  height: 43px;
+  margin-left: 68px;
+  margin-top: 24px;
+}
+
+.displayBoxinRight {
+  /* border: 2px solid black; */
+  width: 180px;
+  position: fixed;
+  right: 27px;
+  /* bottom: 26px; */
+  height: 41px;
+  top: 110px;
+}
+#dot {
+  top: 20px;
+  height: 2px;
+  width: 0px;
+  position: relative;
+  left: 10px;
+  background-color: #80afa5;
+}
+.animatedButton {
+  border-radius: 30px;
+  display: block;
+  /* background-image: linear-gradient(#1c604e, rgb(8, 37, 90)); */
+  background-image: linear-gradient(50deg, #2857a4 0%, #403066 74%);
+  height: 40px;
+  width: 40px;
+  margin-left: 9px;
+}
+#secondTextBox {
+  font-size: 17px;
+  font-family: "Calligraffitti", cursive;
+  color: white;
+  /* background-image: linear-gradient(#1c604e, rgb(8, 37, 90)); */
+  /* background-image: linear-gradient(50deg, #2857a4 0%, #403066 74%); */
+  height: 30px;
+  width: 95px;
+  position: relative;
+  top: -40px;
+  left: 45px;
+  text-align: center;
+  padding-top: 9px;
+}
+
+.animatedButton img {
+  position: relative;
+  top: 8px;
+  left: 11px;
+  height: 22px;
+}
+.animatedButton:hover {
+  width: 100%;
+  /* transition: 1s; */
+}
+#addText {
+  display: none;
+  position: absolute;
+  top: 11px;
+  left: 34px;
+}
+button:hover {
+  background: linear-gradient(to bottom right, #4a47a3, #54717f);
+  border: 1px solid white;
+}
+.NoteBoxContainer {
+  display: flex;
+  height: 100%;
+  width: 97%;
+  flex-wrap: wrap;
+  row-gap: 60px;
+  position: relative;
+  top: 192px;
+  /* border: 2px solid white; */
+  left: 22px;
+  /* z-index: -1; */
+}
+.noteBox1 {
+  position: relative;
+  top: 3px;
+  font-size: 16px;
+  padding: 15px 20px;
+  border-radius: 0px 0px 12px 12px;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  min-height: 163px;
+  box-sizing: border-box;
+  margin-top: 54px;
+  font-style: oblique;
+  width: 366px;
+  margin-left: -366px;
+  background-color: aliceblue;
+}
+
+.noteBox1:focus {
+  outline: none;
+}
+.BoxInNoteBox1 {
+  display: flex;
+  justify-content: end;
+  border: none;
+  width: 366px;
+  height: 217px;
+  border-radius: 12px;
+  background-color: #00006b;
+  margin-left: 54px;
+  text-decoration: none;
+  position: relative;
+  top: -2px;
+  /* z-index: -1; */
+}
+
+textarea::-webkit-scrollbar {
+  display: none;
+}
+textarea {
+  resize: none;
+}
+
+.SaveDelBox {
+  height: 78px;
+  width: 152px;
+  display: flex;
+  position: relative;
+  left: -2em;
+  top: 0em;
+  justify-content: center;
+  column-gap: 29px;
+  /* border: 2px solid black; */
+}
+.deleteImg {
+  height: 34px;
+  margin-top: 9px;
+}
+
+.saveImg {
+  height: 34px;
+  margin-top: 9px;
+}
+
+.deleteImg:hover {
+  transform: scale(1.2);
+  transition: 0.4s;
+  filter: drop-shadow(0px 5px 8px rgb(219, 218, 218));
+}
+
+.saveImg:hover {
+  transform: scale(1.2);
+  transition: 0.4s;
+  filter: drop-shadow(0px 5px 8px rgb(219, 218, 218));
+}
+.links {
+  display: flex;
+  margin: auto;
+  top: 64px;
+  width: 50%;
+  margin-top: -34px;
+}
+.links a {
+  color: white;
+  margin-left: 100px;
+  text-decoration: none;
+  font-size: 21px;
+  position: relative;
+  top: -12px;
+  font-family: "Calligraffitti", cursive;
+}
+
+.containerForDiscovery {
+  top: 9em;
+  min-height: 100px;
+  width: 68em;
+  margin: 0 auto;
+  /* background-color: #fff; */
+  padding: 20px;
+  border-radius: 8px;
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+  position: relative;
+  max-height: 1000px;
+}
+
+/* -------------------------------------- */
+/* for Discoveries */
+/* 
+button:hover {
+  background-color: #4a47a3;
+} */
+
+/* .task input {
+  flex: 1;
+  padding: 5px;
+  border: none;
+  margin-right: 10px;
+  font-size: 16px;
+} */
+
+.task button {
+  padding: 6px 10px;
+  margin-left: 10px;
+  background-color: #f44336;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+}
+
+/* ------------------------ */
+
+h1 {
+  /* background: linear-gradient(to right, #ff7300, #feae00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 50px auto; */
+  text-align: center;
+  font-family: "Calligraffitti", cursive;
+}
+
+.add-task {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.task {
+  border-radius: 4px;
+  margin-bottom: 10px;
+  background-color: #f7f7f7;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 41em;
+  height: 60px;
+  margin: auto;
+  box-sizing: border-box;
+  padding: 13px 19px;
+  margin-top: 20px;
+  font-family: "Calligraffitti", cursive;
+  font-weight: 800;
+}
+#taskInput {
+  padding: 8px;
+  height: 60px;
+  width: 39em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  padding: 13px 19px;
+  font-size: 17px;
+  margin: auto;
+  margin-top: 20px;
+  background-color: #4a47a3;
+  color: white;
+}
+::placeholder {
+  color: white;
+  opacity: 1; /* Firefox */
+}
+.btns {
+  border: 10px solid white;
+  display: flex;
+  float: right;
+  position: relative;
+  right: 3em;
+  top: -49px;
+}
+.box {
+  /* border: 2px solid black; */
+  max-width: 53em;
+  padding-left: 10px;
+  font-size: 16px;
+  font-family: cursive;
+  font-optical-sizing: auto;
+  /* font-weight: <weight>; */
+  font-style: normal;
+}
+
+button {
+  padding: 6px 11px 1px;
+  cursor: pointer;
+  background: linear-gradient(50deg, #2857a4 0%, #403066 74%);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-family: "Calligraffitti", cursive;
+  font-size: 17px;
+  width: 119px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  width: 40em;
+  margin: auto;
+  font-family: cursive;
+  background: linear-gradient(to right, #4a47a3, #afaddc);
+  border: 1px solid white;
+  color: white;
+}
+
+.task-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.edit-task,
+.delete-task {
+  padding: 5px 10px 1px;
+  cursor: pointer;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  width: 66px;
+  height: 29px;
+  box-sizing: border-box;
+  font-size: 13px;
+}
+
+.edit-task:hover,
+.delete-task:hover {
+  background-color: #2980b9;
+}
+
+.task-input {
+  flex: 1;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+}

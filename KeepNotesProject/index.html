@@ -1,0 +1,55 @@
+<!Doctype html>
+<html>
+
+<head>
+    <title>
+        Keep Notes!
+    </title>
+    <link rel="stylesheet" href="Keep.css">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <!-- Font-Used -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Calligraffitti&family=Playpen+Sans:wght@400;500&family=Roboto:wght@100&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Briem+Hand:wght@100..900&family=Poetsen+One&family=Rajdhani&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="topBox" style="color:white;">
+        <img src="images/notes.png" id="notesimg">
+        <span id="left_name">Satyam Keep</span>
+
+        <!-- Anchor tag Creating Hyperlinks -->
+        <div class="links">
+            <div> <a href="index.html">Notes</a></div>
+            <div> <a href="To-Do_List.html" onclick="cngBackground()">To-Do List</a></div>
+        </div>
+
+
+    </div>
+
+    <div class=" displayBoxinRight">
+        <span class="animatedButton" onmouseover="movingAnimatedBox()" onmouseout="backToNormalPosition()"
+            onclick="createNewNotes()">
+
+            <div id="dot"></div>
+            <img src="images/forwardIcon.png" id="forwardicon">
+        </span>
+        <div id="secondTextBox">Add Note</div>
+    </div>
+    <div class="NoteBoxContainer">
+
+    </div>
+    <script src="Notes.Js"></script>
+
+
+
+</body>
+
+
+</html>
